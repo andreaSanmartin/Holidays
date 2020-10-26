@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvwnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtvwcodusu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="txtvwcodigo"
+                android:textColor="@color/colorAccent"
+                android:textSize="2sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo:"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvwcorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorDark"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contarseña:"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvwcontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorDark"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento:"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvwfechausu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorDark"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Género:"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvwgenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorDark"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono:"
+                android:textColor="@color/colorDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvwtelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorDark"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

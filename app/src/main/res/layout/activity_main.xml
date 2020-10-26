@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linerlayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:tooltipText="Buscar"
+            android:backgroundTint="@color/colorDark"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tooltipText="Inicio"
+            android:backgroundTint="@color/colorDark"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/btnuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tooltipText="Usuario"
+            android:backgroundTint="@color/colorDark"
+            app:srcCompat="@drawable/ic_user" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tooltipText="Información"
+            android:backgroundTint="@color/colorDark"
+            app:srcCompat="@drawable/ic_info" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center">
+
+    </ViewFlipper>
+
+
+</LinearLayout>

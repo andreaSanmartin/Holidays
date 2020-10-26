@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_fondo"
+    android:orientation="vertical"
+    tools:context=".InicioRegistro">
+
+    <LinearLayout
+        android:id="@+id/linerlayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Buscar"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Inicio"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/btnuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Usuario"
+            app:srcCompat="@drawable/ic_user" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Información"
+            app:srcCompat="@drawable/ic_info" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btndetalleusu"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="70dp"
+            android:text="Iniciar Sesión"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorWith"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btndetallealo"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Registrarse"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorWith"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>

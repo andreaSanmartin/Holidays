@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_re_usu"
+    tools:context=".RegistrarUsuario">
+
+    <LinearLayout
+        android:id="@+id/linerlayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Buscar"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Inicio"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/btnuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Usuario"
+            app:srcCompat="@drawable/ic_user" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Información"
+            app:srcCompat="@drawable/ic_info" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtviewtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Registro de Usuario"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtnombreus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Nombre y Apellido"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWith" />
+
+
+            <EditText
+                android:id="@+id/txtemailus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWith" />
+
+            <EditText
+                android:id="@+id/txtpasswordus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="pasword"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWith" />
+
+            <EditText
+                android:id="@+id/txtgenerous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Masculino/Femenino"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWith" />
+
+
+            <EditText
+                android:id="@+id/txtdateus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="TxtFNacimientous"
+                android:inputType="date"
+                android:textColor="@color/colorWith" />
+
+            <EditText
+                android:id="@+id/txttelefonous"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="txtTelefonous"
+                android:inputType="phone"
+                android:textColor="@color/colorWith" />
+
+            <Button
+                android:id="@+id/btnGardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:text="Gardar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorLink="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

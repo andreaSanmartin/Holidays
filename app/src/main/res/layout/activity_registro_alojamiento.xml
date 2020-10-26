@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroAlojamiento">
+
+    <LinearLayout
+        android:id="@+id/linerlayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Buscar"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Inicio"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/btnuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Usuario"
+            app:srcCompat="@drawable/ic_user" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorDark"
+            android:tooltipText="Información"
+            app:srcCompat="@drawable/ic_info" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtviewtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="Registro de Alojamiento"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtcondiciones"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:hint="Condiciones que impone"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWith"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtdescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:hint="Descripción"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:hint="Dirección"
+                android:inputType="textPostalAddress"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtbanos"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:hint="No. de baños"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtcamas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="No. de camas"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txthabitaciones"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:hint="No. de habitaciones"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdireccion" />
+
+            <EditText
+                android:id="@+id/txthuespedes"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:hint="No. de húespedes preferibles"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtprecio"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="$ 120"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servicios" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agua Caliente" />
+
+            <CheckBox
+                android:id="@+id/checkBoxW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wifi" />
+
+            <CheckBox
+                android:id="@+id/checkBoxT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefono" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provincia"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerciud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Vivienda"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnertipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnimagen"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="Agregar Imagen"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="?attr/actionModeSelectAllDrawable"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="?attr/actionModeSelectAllDrawable" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    app:srcCompat="?attr/actionModeSelectAllDrawable" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnguardaralojamiento"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="GUARDAR"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
